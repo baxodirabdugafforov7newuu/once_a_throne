@@ -11,8 +11,7 @@ landmarks, and cultural heritage from ancient times to the modern era, focusing 
 - **📜 Historical Timeline**
 - **🏰 Landmarks & Monuments** 
 - **👑 Rulers & Dynasties** 
-- **🎭 Culture & Traditions** 
-- **🗺️ Interactive Map & Timeline** 
+- **🗺️ Interactive Design & Timeline** 
 - **📖 Research & Resources** 
 
 ## 🛠️ Built With
