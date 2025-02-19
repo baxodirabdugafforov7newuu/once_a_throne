@@ -13,7 +13,6 @@ landmarks, and cultural heritage from ancient times to the modern era, focusing 
 - **👑 Rulers & Dynasties** 
 - **🎭 Culture & Traditions** 
 - **🗺️ Interactive Map & Timeline** 
-- **❓ Quizzes & Fun Facts**
 - **📖 Research & Resources** 
 
 ## 🛠️ Built With
