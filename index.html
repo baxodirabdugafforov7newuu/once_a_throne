@@ -27,7 +27,7 @@
                     <a href="#historyId">
                         <li>History</li>
                     </a>
-                    <a href="">
+                    <a href="#landmarks">
                         <li>Landmarks</li>
                     </a>
                     <a href="">
@@ -461,9 +461,87 @@
     </section>
 
 
-    <section class="landmarks">
+    <section class="landmarks" id="landmarks">
+        <h1 class="section-title">Famous Landmarks of Uzbekistan</h1>
+        <div class="landmark-grid">
+            <div class="landmark-card">
+                <img src="./assets/images/landmarks/registan.jpg" alt="Registan Square">
+                <h2>Registan Square</h2>
+                <p>The heart of Samarkand, featuring grand madrasahs.</p>
+                <button class="explore-btn" data-modal="modal-registan">Learn More</button>
+            </div>
+    
+            <div class="landmark-card">
+                <img src="./assets/images/landmarks/itchan_kala.jpg" alt="Itchan Kala">
+                <h2>Itchan Kala</h2>
+                <p>A well-preserved walled city in Khiva with stunning architecture.</p>
+                <button class="explore-btn" data-modal="modal-itchan">Learn More</button>
+            </div>
+    
+            <div class="landmark-card">
+                <img src="./assets/images/landmarks/ark_fortress.jpg" alt="Bukhara Ark Fortress">
+                <h2>Bukhara Ark Fortress</h2>
+                <p>A massive fortress that once housed Bukhara's rulers.</p>
+                <button class="explore-btn" data-modal="modal-ark">Learn More</button>
+            </div>
+            <!-- Registan Modal -->
+            <div id="modal-registan" class="modal">
+                <div class="modal-content">
+                    <button class="close-btn">&times;</button>
+                    <h1>Registan Square</h1>
+                    <div class="slider">
+                        <button class="prev-btn">&#9664;</button>
+                        <div class="slider-container">
+                            <img src="./assets/images/landmarks/registan1.jpg" class="active" alt="Registan 1">
+                            <img src="./assets/images/landmarks/registan2.jpg" alt="Registan 2">
+                            <img src="./assets/images/landmarks/registan3.jpg" alt="Registan 3">
+                        </div>
+                        <button class="next-btn">&#9654;</button>
+                    </div>
+                    <p>Registan Square in Samarkand was the center of the Timurid Empire. It features three madrasahs built between the 15th and 17th centuries, known for their intricate blue tilework and grand architecture.</p>
+                </div>
+            </div>
 
+            <!-- Itchan Kala Modal -->
+            <div id="modal-itchan" class="modal">
+                <div class="modal-content">
+                    <button class="close-btn">&times;</button>
+                    <h1>Itchan Kala</h1>
+                    <div class="slider">
+                        <button class="prev-btn">&#9664;</button>
+                        <div class="slider-container">
+                            <img src="./assets/images/landmarks/itchan_kala1.jpg" class="active" alt="Itchan Kala 1">
+                            <img src="./assets/images/landmarks/itchan_kala2.jpg" alt="Itchan Kala 2">
+                            <img src="./assets/images/landmarks/itchan_kala3.jpg" alt="Itchan Kala 3">
+                        </div>
+                        <button class="next-btn">&#9654;</button>
+                    </div>
+                    <p>Itchan Kala is the inner city of Khiva, surrounded by high walls. It served as an important stop along the Silk Road and features well-preserved Islamic architecture.</p>
+                </div>
+            </div>
+
+
+            <!-- Ark Fortress Modal -->
+            <div id="modal-ark" class="modal">
+                <div class="modal-content">
+                    <button class="close-btn">&times;</button>
+                    <h1>Bukhara Ark Fortress</h1>
+                    <div class="slider">
+                        <button class="prev-btn">&#9664;</button>
+                        <div class="slider-container">
+                            <img src="./assets/images/landmarks/ark1.jpg" class="active" alt="Ark Fortress 1">
+                            <img src="./assets/images/landmarks/ark2.jpg" alt="Ark Fortress 2">
+                            <img src="./assets/images/landmarks/ark3.jpg" alt="Ark Fortress 3">
+                        </div>
+                        <button class="next-btn">&#9654;</button>
+                    </div>
+                    <p>The Ark Fortress in Bukhara was a massive stronghold used by rulers for centuries. It functioned as a royal court and military base.</p>
+                </div>
+            </div>
+
+        </div>
     </section>
+    
 
     <section class="leaders">
 

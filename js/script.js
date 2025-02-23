@@ -6,7 +6,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const openButtons = document.querySelectorAll(".explore-btn");
     const modals = document.querySelectorAll(".modal");
     const closeButtons = document.querySelectorAll(".close-btn");
+    const navLinks = document.querySelectorAll("nav a");
 
+    // Navigation
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            const targetId = this.getAttribute("href"); 
+            const targetSection = document.querySelector(targetId); 
+
+            if (targetSection) {
+                event.preventDefault(); 
+                targetSection.scrollIntoView({ behavior: "smooth" }); 
+            }
+        });
+    });
     // Open Modal
     openButtons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -30,6 +43,38 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    const sliders = document.querySelectorAll(".slider");
+
+    sliders.forEach(slider => {
+        const images = slider.querySelectorAll(".slider-container img");
+        const prevBtn = slider.querySelector(".prev-btn");
+        const nextBtn = slider.querySelector(".next-btn");
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            images.forEach(img => img.classList.remove("active"));
+            images[index].classList.add("active");
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        });
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }, 5000);
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
