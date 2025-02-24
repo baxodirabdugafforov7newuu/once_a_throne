@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modals = document.querySelectorAll(".modal");
     const closeButtons = document.querySelectorAll(".close-btn");
     const navLinks = document.querySelectorAll("nav a");
+    const contactForm = document.getElementById("contact-form");
 
     // Navigation
     navLinks.forEach(link => {
@@ -50,12 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const images = slider.querySelectorAll(".slider-container img");
         const prevBtn = slider.querySelector(".prev-btn");
         const nextBtn = slider.querySelector(".next-btn");
+        const description = slider.closest(".modal-content").querySelector("p");
 
         let currentIndex = 0;
 
         function showImage(index) {
             images.forEach(img => img.classList.remove("active"));
             images[index].classList.add("active");
+            description.textContent = images[index].getAttribute("data-description");
         }
 
         prevBtn.addEventListener("click", () => {
@@ -73,6 +76,20 @@ document.addEventListener("DOMContentLoaded", () => {
             currentIndex = (currentIndex + 1) % images.length;
             showImage(currentIndex);
         }, 5000);
+    });
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent actual form submission
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (name && email && message) {
+            alert("Thank you for reaching out! We will get back to you soon.");
+            contactForm.reset(); // Clear form fields
+        } else {
+            alert("Please fill in all fields before submitting.");
+        }
     });
 
 });

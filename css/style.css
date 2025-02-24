@@ -562,7 +562,7 @@ body {
 
 .landmark-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -570,3 +570,96 @@ body {
 .landmark-card:hover {
     transform: scale(1.05);
 }
+
+.contact {
+    text-align: center;
+    padding: 3rem;
+    background: #1a1a1a;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.send-btn {
+    background: gold;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: darkgoldenrod;
+}
+
+
+.contact-info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: gold;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: darkgoldenrod;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .landmark-card img {
+        height: 200px; /* Reduce height on smaller screens */
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+
