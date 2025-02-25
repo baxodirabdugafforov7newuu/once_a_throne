@@ -36,6 +36,9 @@
                     <a href="#contact">
                         <li>Contact</li>
                     </a>
+                    <a href="./map.html">
+                        <li>Map</li>
+                    </a>
                 </ul>
             </nav>
         </header>
@@ -461,8 +464,8 @@
     </section>
 
 
-    <section class="landmarks" id="landmarks">
-        <h1 class="section-title">Famous Landmarks of Uzbekistan</h1>
+    <section class="landmarks" id="landmarks" style="margin: 8rem 0;">
+        <h1 class="section-title" style="text-align: center; font-size: 4rem; color: gold;">Famous Landmarks of Uzbekistan</h1>
         <div class="landmark-grid">
             <div class="landmark-card">
                 <img src="./assets/images/landmarks/registan.jpg" alt="Registan Square">
@@ -485,57 +488,70 @@
                 <button class="explore-btn" data-modal="modal-ark">See More</button>
             </div>
             <!-- Registan Modal -->
-            <div id="modal-registan" class="modal">
-                <div class="modal-content">
-                    <button class="close-btn">&times;</button>
-                    <div class="slider">
-                        <button class="prev-btn">&#9664;</button>
-                        <div class="slider-container">
-                            <img id="registan-image" class="active" src="./assets/images/landmarks/registan1.jpg" data-description="Registan Square in Samarkand was the center of the Timurid Empire.">
-                            <img src="./assets/images/landmarks/registan2.jpg" data-description="Gur-Emir is the mausoleum of Tamerlane, his mentor Mir Said Baraka, and some members of Timur's family in Samarkand. Also interpreted as Guri Mir - the grave of the worlds, meaning Mir Said Baraka.">
-                            <img src="./assets/images/landmarks/registan3.jpg" data-description="Bibi Khanum Madrasah is a lost building of a madrasah in Samarkand, erected in 1399 during the reign of Timur with funds from his senior wife Saray-mulk Khanum. One of two madrasahs in the capital built during Timur's lifetime. It enjoyed particular fame during Timur's reign.">
-                            <img src="./assets/images/landmarks/registan4.jpg" data-description="Shahi-Zinda is a monument of medieval architecture in Samarkand, an ensemble of mausoleums of the Karakhanid and Timurid nobility. The complex that has come down to us consists of eleven mausoleums, successively added to each other during the 14th-15th centuries.">
+            <div id="modal-registan" class="modal" style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                <div class="modal-content" style="background: white; padding: 20px; border-radius: 10px; max-width: 600px; text-align: center; position: relative;">
+                    <button class="close-btn" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+                    <div class="slider" style="display: flex; flex-direction: column; align-items: center;">
+                        <button class="prev-btn" style="margin-bottom: 10px; cursor: pointer; background: none; border: none; font-size: 20px;">&#9664;</button>
+                        <div class="slider-container" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                            <img id="registan-image" class="active" src="./assets/images/landmarks/registan1.jpg" data-description="Registan Square in Samarkand was the center of the Timurid Empire."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/registan2.jpg" data-description="Gur-Emir is the mausoleum of Tamerlane, his mentor Mir Said Baraka, and some members of Timur's family in Samarkand. Also interpreted as Guri Mir - the grave of the worlds, meaning Mir Said Baraka."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/registan3.jpg" data-description="Bibi Khanum Madrasah is a lost building of a madrasah in Samarkand, erected in 1399 during the reign of Timur with funds from his senior wife Saray-mulk Khanum. One of two madrasahs in the capital built during Timur's lifetime. It enjoyed particular fame during Timur's reign."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/registan4.jpg" data-description="Shahi-Zinda is a monument of medieval architecture in Samarkand, an ensemble of mausoleums of the Karakhanid and Timurid nobility. The complex that has come down to us consists of eleven mausoleums, successively added to each other during the 14th-15th centuries."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
                         </div>
-                        <button class="next-btn">&#9654;</button>
+                        <button class="next-btn" style="margin-top: 10px; cursor: pointer; background: none; border: none; font-size: 20px;">&#9654;</button>
                     </div>
-                    <p id="registan-description">Registan Square in Samarkand was the center of the Timurid Empire.</p>
+                    <p id="registan-description" style="margin-top: 15px; font-size: 16px; line-height: 1.5;">Registan Square in Samarkand was the center of the Timurid Empire.</p>
                 </div>
             </div>
+            
 
             <!-- Itchan Kala Modal -->
-            <div id="modal-itchan" class="modal">
-                <div class="modal-content">
-                    <button class="close-btn">&times;</button>
-                    <div class="slider">
-                        <button class="prev-btn">&#9664;</button>
-                        <div class="slider-container">
-                            <img id="registan-image" class="active" src="./assets/images/landmarks/itchan_kala1.jpg" data-description="Ichan-Kala is a walled inner city of the historic Uzbek city of Khiva in Uzbekistan, which became the first World Heritage Site in Central Asia.">
-                            <img src="./assets/images/landmarks/itchan_kala2.jpg" data-description="Dishan-Kala is the name of the historical outer city of Khiva. In Khiva, there was a traditional division of the city into two separate parts: the inner city - Ichan-Kala and the outer city - Dishan-Kala.">
-                            <img src="./assets/images/landmarks/itchan_kala3.jpg" data-description="The Islam-Khoja Minaret is a minaret in Khiva, located in the center of the Ichan-Kala citadel, part of the Islam-Khoja complex, together with the madrasah of the same name.">
+            <div id="modal-itchan" class="modal" style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                <div class="modal-content" style="background: white; padding: 20px; border-radius: 10px; max-width: 600px; text-align: center; position: relative;">
+                    <button class="close-btn" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+                    <div class="slider" style="display: flex; flex-direction: column; align-items: center;">
+                        <button class="prev-btn" style="margin-bottom: 10px; cursor: pointer; background: none; border: none; font-size: 20px;">&#9664;</button>
+                        <div class="slider-container" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                            <img id="registan-image" class="active" src="./assets/images/landmarks/itchan_kala1.jpg" data-description="Ichan-Kala is a walled inner city of the historic Uzbek city of Khiva in Uzbekistan, which became the first World Heritage Site in Central Asia."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/itchan_kala2.jpg" data-description="Dishan-Kala is the name of the historical outer city of Khiva. In Khiva, there was a traditional division of the city into two separate parts: the inner city - Ichan-Kala and the outer city - Dishan-Kala."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/itchan_kala3.jpg" data-description="The Islam-Khoja Minaret is a minaret in Khiva, located in the center of the Ichan-Kala citadel, part of the Islam-Khoja complex, together with the madrasah of the same name."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
                         </div>
-                        <button class="next-btn">&#9654;</button>
+                        <button class="next-btn" style="margin-top: 10px; cursor: pointer; background: none; border: none; font-size: 20px;">&#9654;</button>
                     </div>
-                    <p>Itchan Kala is the inner city of Khiva, surrounded by high walls. It served as an important stop along the Silk Road and features well-preserved Islamic architecture.</p>
+                    <p style="margin-top: 15px; font-size: 16px; line-height: 1.5;">Itchan Kala is the inner city of Khiva, surrounded by high walls. It served as an important stop along the Silk Road and features well-preserved Islamic architecture.</p>
                 </div>
             </div>
+            
 
 
             <!-- Ark Fortress Modal -->
-            <div id="modal-ark" class="modal">
-                <div class="modal-content">
-                    <button class="close-btn">&times;</button>
-                    <div class="slider">
-                        <button class="prev-btn">&#9664;</button>
-                        <div class="slider-container">
-                            <img id="registan-image" class="active" src="./assets/images/landmarks/ark1.jpg" data-description="Arslankhan Minaret, also known as the Bukhara Minaret. Better known as the Kalyan Minaret, is a minaret of the Friday mosque in the historic center of Bukhara, built in 1127 by the Karakhanid Arslan Khan, known for his urban development activities.">
-                            <img src="./assets/images/landmarks/ark2.jpg" data-description="Ark is an ancient citadel in Bukhara in modern-day Uzbekistan; a monumental fortress rising almost 20 meters above the surrounding terrain and covering an area of ​​about 4 hectares. The fortress is the most ancient architectural and archaeological monument of Bukhara.">
-                            <img src="./assets/images/landmarks/ark3.jpg" data-description="The Ark Fortress in Bukhara was a massive stronghold used by rulers for centuries. It functioned as a royal court and military base.">
+            <div id="modal-ark" class="modal" style="margin: 20px; display: flex; align-items: center; justify-content: center;">
+                <div class="modal-content" style="background: white; padding: 20px; border-radius: 10px; max-width: 600px; text-align: center;">
+                    <button class="close-btn" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+                    <div class="slider" style="display: flex; flex-direction: column; align-items: center;">
+                        <button class="prev-btn" style="margin-bottom: 10px; cursor: pointer; background: none; border: none; font-size: 20px;">&#9664;</button>
+                        <div class="slider-container" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                            <img id="registan-image" class="active" src="./assets/images/landmarks/ark1.jpg" data-description="Arslankhan Minaret, also known as the Bukhara Minaret. Better known as the Kalyan Minaret, is a minaret of the Friday mosque in the historic center of Bukhara, built in 1127 by the Karakhanid Arslan Khan, known for his urban development activities."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/ark2.jpg" data-description="Ark is an ancient citadel in Bukhara in modern-day Uzbekistan; a monumental fortress rising almost 20 meters above the surrounding terrain and covering an area of ​​about 4 hectares. The fortress is the most ancient architectural and archaeological monument of Bukhara."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
+                            <img src="./assets/images/landmarks/ark3.jpg" data-description="The Ark Fortress in Bukhara was a massive stronghold used by rulers for centuries. It functioned as a royal court and military base."
+                                style="max-width: 100%; height: auto; margin-bottom: 10px; border-radius: 5px;">
                         </div>
-                        <button class="next-btn">&#9654;</button>
+                        <button class="next-btn" style="margin-top: 10px; cursor: pointer; background: none; border: none; font-size: 20px;">&#9654;</button>
                     </div>
-                    <p>The Ark Fortress in Bukhara was a massive stronghold used by rulers for centuries. It functioned as a royal court and military base.</p>
+                    <p style="margin-top: 15px; font-size: 16px; line-height: 1.5;">The Ark Fortress in Bukhara was a massive stronghold used by rulers for centuries. It functioned as a royal court and military base.</p>
                 </div>
             </div>
+            
 
         </div>
     </section>

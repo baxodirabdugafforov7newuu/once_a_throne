@@ -544,6 +544,7 @@ body {
     box-shadow: 0 0 10px rgba(255, 126, 95, 0.8);
 }
 
+
 .landmark-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -558,10 +559,15 @@ body {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
+    height: 140%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .landmark-card img {
-    width: 100%;
+    width: 90%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
@@ -576,6 +582,7 @@ body {
     padding: 3rem;
     background: #1a1a1a;
     color: white;
+    margin-top: 12rem;
 }
 
 .contact-container {
