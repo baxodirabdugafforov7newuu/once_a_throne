@@ -8,11 +8,11 @@ landmarks, and cultural heritage from ancient times to the modern era, focusing 
 > Coming Soon
 
 ##  Features
-- ** Historical Timeline**
-- ** Landmarks & Monuments** 
-- ** Rulers & Dynasties** 
-- **  Interactive Design & Timeline**
-- ** Timeline Map**
+- **Historical Timeline**
+- **Landmarks & Monuments** 
+- **Rulers & Dynasties** 
+- **Interactive Design & Timeline**
+- **Timeline Map**
 
 ##  Built With
 - **HTML, CSS, JavaScript**
