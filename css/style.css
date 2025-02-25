@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
@@ -153,6 +154,7 @@ body {
 
 
 .history {
+    
     #exp {
         font-size: 4rem;
         color: gold;
@@ -670,3 +672,61 @@ textarea {
     }
 }
 
+
+#leader-container {
+    width: 90%;
+    margin: 20px auto;
+}
+#leaderTimeline {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.leader-card {
+    background: linear-gradient(135deg, #005f73, #0a9396);
+    border-radius: 10px;
+    height: 620px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: white;
+    transition: transform 0.3s ease;
+}
+.leader-card:hover {
+    transform: scale(1.03);
+}
+.leader-card h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.leader-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    margin: 2rem 0;
+}
+.leader-section:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+.leader-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.leader-info h3 {
+    margin: 0;
+    font-size: 20px;
+}
+.leader-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    width: 80%;
+}
